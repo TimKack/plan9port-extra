@@ -15,7 +15,7 @@ pq_error(int eflag, char *fmt, ...)
 	out = vseprint(out, end, fmt, arg);
 	va_end(arg);
 	if (eflag)
-		vseprint(out, end, ": %r", 0);
+		seprint(out, end, ": %r");
 	return -1;
 }
 
